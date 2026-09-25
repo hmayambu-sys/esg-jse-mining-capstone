@@ -1,22 +1,51 @@
 # ESG Disclosure and Financial Performance: Evidence from JSE Mining Companies
-
-**WorldQuant University | MSc Financial Engineering - Capstone Project**
-**Repo:** `esg-jse-mining-capstone` | **Owner:** [hmayambu-sys](https://github.com/hmayambu-sys)
-
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Status: Private Capstone](https://img.shields.io/badge/status-capstone-orange)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
+**WQU | MSc Financial Engineering - Capstone | Owner: hmayambu-sys**
 
 ### Project Overview
-This repository contains the econometric analysis evaluating the relationship between ESG disclosures and stock market volatility / financial performance for mining companies listed on the Johannesburg Stock Exchange (JSE). 
-
-The project extends the author's prior research on ESG investing in South African mining (Mayambu, 2026).
-
-> **Research Context:** Does ESG disclosure mitigate downside risk or is it greenwashing? This capstone applies causal inference and panel data methods to JSE mining equities.
+Econometric analysis of ESG disclosures vs stock volatility/performance for JSE mining companies. Extends prior research (Mayambu, 2026). Research Context: Does ESG mitigate downside risk or is it greenwashing? Applies causal inference and panel methods.
 
 ### Research Questions
-1.  Is there a significant relationship between ESG scores and stock returns (ESG vs Returns)?
-2.  Does higher ESG disclosure reduce idiosyncratic volatility and downside risk (VaR / CVaR)?
-3.  Causal analysis: Is the effect risk-mitigation or disclosure-driven?
+1. ESG scores vs stock returns?
+2. Does ESG disclosure reduce volatility/downside risk (VaR/CVaR)?
+3. Causal: risk-mitigation or disclosure-driven?
 
 ### Repository Structure
+esg-jse-mining-capstone/
+- README.md
+- CONTRIBUTORS.md
+- requirements.txt
+- JSE_sample_data (1).csv (2019-2023 panel)
+- ESG_vs_Returns.png
+- esg_jse_mining_analysis.ipynb
+- src/ (helper functions)
+
+### Data
+- Source: JSE listed mining firms, Annual Integrated Reports
+- File: JSE_sample_data (1).csv - ESG scores, returns, volatility, market cap
+- Period: 2019-2023
+
+### Methodology
+- Exploratory: Correlation ESG vs Returns (ESG_vs_Returns.png)
+- Panel Models: Fixed Effects, Random Effects
+- Risk Models: GARCH, CVaR
+- Causal Inference: Causal Bayesian Networks (pgmpy) - Greenwashing vs Real Risk Mitigation
+- Portfolio Test: ESG-screened vs unscreened
+- Builds on: SSRN 7410578, SSRN 7181798
+
+### Installation
+git clone https://github.com/hmayambu-sys/esg-jse-mining-capstone.git
+cd esg-jse-mining-capstone
+pip install -r requirements.txt
+jupyter notebook esg_jse_mining_analysis.ipynb
+
+### Contributors
+Henry Mayambu - Lead Researcher & Financial Engineer - @hmayambu-sys
+
+### Citation
+- Google Scholar: https://scholar.google.com/citations?user=sEA3LRkAAAAJ
+- SSRN Author: 11727268
+- ORCID: 0009-0007-8475-2558
+- Cite: Mayambu, H. (2026). ESG Investing and Stock Market Returns: Evidence from South African Mining Equities. SSRN.
+
+### License
+MIT - Academic use (WQU Capstone) - Livingstone, Zambia | Sep 2026
