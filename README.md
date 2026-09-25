@@ -14,6 +14,7 @@ esg-jse-mining-capstone/
 - README.md
 - CONTRIBUTORS.md
 - requirements.txt
+- Project_Proposal_M4 Student Group 17830.pdf
 - JSE_sample_data (1).csv (2019-2023 panel)
 - ESG_vs_Returns.png
 - esg_jse_mining_analysis.ipynb
