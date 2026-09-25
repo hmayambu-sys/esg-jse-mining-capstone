@@ -1,17 +1,22 @@
-# MScFE 690 Capstone - Sovereign Stress Testing & ESG Mining
-Author: Henry Mayambu | SSRN 11727268 | hmayambu@gmail.com
+# ESG Disclosure and Financial Performance: Evidence from JSE Mining Companies
 
-## Objective
-ARDL stress test of SA sovereign portfolio + ESG scoring for JSE mining.
+**WorldQuant University | MSc Financial Engineering - Capstone Project**
+**Repo:** `esg-jse-mining-capstone` | **Owner:** [hmayambu-sys](https://github.com/hmayambu-sys)
 
-## How to Run
-1. pip install -r requirements.txt
-2. python src/data_collection.py
-3. python src/ardl_model.py
-4. python src/stress_test.py
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Status: Private Capstone](https://img.shields.io/badge/status-capstone-orange)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 
-## SARB Relevance
-Methodology shared with SARB Financial Stability (26 Aug 2026)
+### Project Overview
+This repository contains the econometric analysis evaluating the relationship between ESG disclosures and stock market volatility / financial performance for mining companies listed on the Johannesburg Stock Exchange (JSE). 
 
-## Repo Link
-https://github.com/hmayambu-sys/esg-jse-mining-capstone
+The project extends the author's prior research on ESG investing in South African mining (Mayambu, 2026).
+
+> **Research Context:** Does ESG disclosure mitigate downside risk or is it greenwashing? This capstone applies causal inference and panel data methods to JSE mining equities.
+
+### Research Questions
+1.  Is there a significant relationship between ESG scores and stock returns (ESG vs Returns)?
+2.  Does higher ESG disclosure reduce idiosyncratic volatility and downside risk (VaR / CVaR)?
+3.  Causal analysis: Is the effect risk-mitigation or disclosure-driven?
+
+### Repository Structure
