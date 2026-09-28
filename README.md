@@ -39,8 +39,12 @@ cd esg-jse-mining-capstone
 pip install -r requirements.txt
 jupyter notebook esg_jse_mining_analysis.ipynb
 
-### Contributors
-Henry Mayambu - Lead Researcher & Financial Engineer - @hmayambu-sys
+## Contributors - Group 17830
+- Ting Ting Han - Literature Review, Data Validation, Panel Fixed Effects
+- Henry Mayambu @hmayambu-sys - GARCH(1,1) / CVaR estimation, GitHub Repo, MLA bibliography
+- Jonathan Matura - Causal Bayesian Network (pgmpy) & Long/Short backtest, README
+
+All members: Joint writing and QA.
 
 ### Citation
 - Google Scholar: https://scholar.google.com/citations?user=sEA3LRkAAAAJ
