@@ -1,56 +1,48 @@
-# ESG Disclosure and Financial Performance: Evidence from JSE Mining Companies
-**WQU | MSc Financial Engineering - Capstone | Owner: hmayambu-sys**
+# WQU MSFE 690 CAPSTONE PROJECT – MODULE 4 DESIGN
+**Project Proposal – Student Group 17830**
+**Members:** Ting Ting Han, Henry Mayambu, Jonathan Matura
+**Title:** Quantitative Assessment of ESG Materiality and Risk-Adjusted Performance of JSE-Listed Mining Equities (2014-2025)
+**Repo:** esg-jse-mining-capstone | **Main:** `esg_jse_mining_analysis.ipynb`
 
-### Project Overview
-Econometric analysis of ESG disclosures vs stock volatility/performance for JSE mining companies. Extends prior research (Mayambu, 2026). Research Context: Does ESG mitigate downside risk or is it greenwashing? Applies causal inference and panel methods.
+### 1. Research Question
+Do composite and pillar-level ESG (E,S,G) scores materially affect risk-adjusted returns, systematic beta, and conditional downside volatility for JSE mining equities after controlling for commodity/FX exposure and publication lags?
+RQ1: Is β_E ≠ β_S ≠ β_G? RQ2: Does higher ESG reduce beta and EGARCH volatility?
+H1: β_ESG ≠ 0, H2: β_E = β_S = β_G (Wald), H3: α_ESG tercile ≠ 0, H4a: θ_ESG <0, H4b: β_int <0
 
-### Research Questions
-1. ESG scores vs stock returns?
-2. Does ESG disclosure reduce volatility/downside risk (VaR/CVaR)?
-3. Causal: risk-mitigation or disclosure-driven?
+### 2. Motivation
+Mining ~8% SA GDP and ~30% JSE cap, JSE Guidance June 2022. Western findings don't transfer due to load-shedding, MPRDA, B-BBEE. Gaps closed: (1) Pillar Black-Box, (2) Look-ahead bias, (3) KIO-AGL ownership.
 
-### Repository Structure
-esg-jse-mining-capstone/
-- README.md
-- CONTRIBUTORS.md
-- requirements.txt
-- Project_Proposal_M4 Student Group 17830.pdf
-- JSE_sample_data (1).csv (2019-2023 panel)
-- ESG_vs_Returns.png
-- esg_jse_mining_analysis.ipynb
-- src/ (helper functions)
+### 3. Data – REAL + DISCLOSED SIMULATED
+15 JSE miners Jan 2014-Jun 2025 (T=138): AGL.JO, IMP.JO, S32.JO, KIO.JO, SSW.JO, HAR.JO, GFI.JO, EXX.JO, ARI.JO, THA.JO, MRF.JO, PAN.JO, DRD.JO, NPH.JO, ASR.JO. Unbalanced: S32 122 obs, THA 135, NPH 46, ASR 77 (delisted). Raw 1,870 → 1,855 → 1,533 clean after 12m ESG lag. 165 annual ESG obs.
+REAL via yfinance: GC=F, PL=F, HG=F, ZAR=X, ^IRX, JSE prices. Controls: CommodityExposure = Σ w_k * Δln(Price_k), FXRiskExposure = Δln(ZAR/USD) × CommodityExposure. ESG: try Refinitiv_ESG_scores.csv else print("No ESG file -> creating disclosed simulated") 45-85 trend. FYE lag: Dec effective July t+1, June Jan t+1, Sept Apr t+1. Assertion EffectiveDate <= Date.
 
-### Data
-- Source: JSE listed mining firms, Annual Integrated Reports
-- File: JSE_sample_data (1).csv - ESG scores, returns, volatility, market cap
-- Period: 2019-2023
+### 4. Methodology
+Model1 Two-Way FE: (Rit-Rft)=α+β1ESG+γ1Commodity+γ2FXRisk+μ_i+λ_t+ε, clustered SE.
+Model2 Predictive Lag12: Eliminates reverse causality.
+Model3 EGARCH-X: ln(σ²)=ω+α|ε|/σ+γ ε/σ+β ln(σ²_lag)+θ ESG. Varying θ (AGL -2.10, ARI -0.22 etc). γ<0 = leverage, θ<0 = dampening. DRD 505.33 outlier due illiquidity.
+Beta interaction: (Rit-Rf)=α+β_m(Rm-Rf)+β_int(Rm-Rf)×ESG. Rm=ALSI/RESI10.
+Portfolios: Annual July rebalance terciles, Jensen Alpha CAPM & SA FF3, Long/Short 10bps, CVaR95 -8.2% vs -12.5%. Charts: ESG Trends, Commodity Real, EGARCH Thetas varying.
 
-### Methodology
-- Exploratory: Correlation ESG vs Returns (ESG_vs_Returns.png)
-- Panel Models: Fixed Effects, Random Effects
-- Risk Models: GARCH, CVaR
-- Causal Inference: Causal Bayesian Networks (pgmpy) - Greenwashing vs Real Risk Mitigation
-- Portfolio Test: ESG-screened vs unscreened
-- Builds on: SSRN 7410578, SSRN 7181798
+### 5. Pain-Points
+(1) Vol models ignoring ESG, (2) No tail/asymmetry, (3) Greenwashing/size confound. Solved via panel+EGARCH-X+CVaR+interaction+Wald.
 
-### Installation
-git clone https://github.com/hmayambu-sys/esg-jse-mining-capstone.git
-cd esg-jse-mining-capstone
-pip install -r requirements.txt
-jupyter notebook esg_jse_mining_analysis.ipynb
+### 6. Obstacles
+Small N, illiquidity DRD/MRF, coal/gold/PGM heterogeneity, load-shedding 22-23, survivorship ASR, ESG methodology changes.
 
-## Contributors - Group 17830
-- Ting Ting Han - Literature Review, Data Validation, Panel Fixed Effects
-- Henry Mayambu @hmayambu-sys - GARCH(1,1) / CVaR estimation, GitHub Repo, MLA bibliography
-- Jonathan Matura - Causal Bayesian Network (pgmpy) & Long/Short backtest, README
+### 7. Real-Life Apps
+Zambian Copperbelt KCM/Mopani/FQM ESG-linked loans, NAPSA ESG-tilt, insurance rehab liability, treasury hedging discount, JSE assurance evidence.
 
-All members: Joint writing and QA.
+### 8. M3 Feedback Incorporation
+Expanded 12 firms 2019-23 →15 firms 2014-25, Fixed constant Theta → varying Thetas, Added FYE 6m lag+ESG_lag12, Added Commodity/FX real controls, KIO robustness, clustered SE, Disclosure flag.
 
-### Citation
-- Google Scholar: https://scholar.google.com/citations?user=sEA3LRkAAAAJ
-- SSRN Author: 11727268
-- ORCID: 0009-0007-8475-2558
-- Cite: Mayambu, H. (2026). ESG Investing and Stock Market Returns: Evidence from South African Mining Equities. SSRN.
+### 9. Expected Contribution
+First JSE mining study with real commodity/FX+disclosed ESG, pillar Wald, EGARCH-X 12/13 negative gammas. Open-source reproducible.
 
-### License
-MIT - Academic use (WQU Capstone) - Livingstone, Zambia | Sep 2026
+### 10. Division
+Ting Han: Lit review, FE, Wald. Henry: yfinance, EGARCH, CVaR, repo. Jonathan: Beta, alpha, README.
+
+### 11. Repo & Prelim Results
+Files: esg_jse_mining_analysis.ipynb, Commodity_FX_Data.csv (1,533 obs), EGARCH_Real_Thetas.csv, png/3 charts. Prelim: High-ESG vol 22.3% vs Low 31.7%, CVaR -8.2% vs -12.5%.
+
+### 12. References MLA
+Berg et al. Review of Finance 2022, Freeman 1984, Friedman NYT 1970, Giese et al. JPM 2019, JSE Guidance 2022, Kräussl et al. JIMF 2022, Matos CFA 2020, Refinitiv 2022.
