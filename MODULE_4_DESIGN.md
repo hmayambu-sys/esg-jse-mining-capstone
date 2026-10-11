@@ -340,26 +340,46 @@ The following structure follows the Source Code Development Guidelines; a privat
   - No new ideas or data introduced
 
 
-**Reference list MLA Format** 
+### Reference List MLA Format
 
-Avramov, Doron, et al. "Sustainable investing with ESG rating uncertainty." Journal of Financial Economics, vol. 145, no. 2, 2022, pp. 642-664.
+Avramov, Doron, et al. "Sustainable investing with ESG rating uncertainty." *Journal of Financial Economics*, vol. 145, no. 2, 2022, pp. 642-664.
+
 Bauer, Rob, and Daniel Hann. "Corporate Environmental Management and Credit Risk." SSRN, 2010.
-Berg, Florian, et al. "Aggregate Confusion: The Divergence of ESG Ratings." Review of Finance, vol. 26, no. 6, 2022, pp. 1315-1344.
-Blitson, Kristian. "ESG Rating Disagreement and the Effects on Stock Returns." 2025.
-Bollerslev, Tim. "Generalized Autoregressive Conditional Heteroskedasticity." Journal of Econometrics, vol. 31, 1986, pp. 307-327.
-Bolton, Patrick, and Marcin Kacperczyk. "Do Investors Care about Carbon Risk?" Journal of Financial Economics, vol. 142, no. 2, 2021, pp. 517-549.
-De Klerk, M., and C. De Villiers. "The Value Relevance of Corporate Responsibility Reporting." Meditari Accountancy Research, vol. 20, no. 2, 2012, pp. 95-115.
-Dimson, Elroy, et al. "Active Ownership." Review of Financial Studies, vol. 28, no. 12, 2015, pp. 3225-3268.
-Edmans, Alex. "Does the Stock Market Fully Value Intangibles? Employee Satisfaction and Equity Prices." Journal of Financial Economics, vol. 101, no. 3, 2011, pp. 621-640.
-Freeman, R. Edward. Strategic Management: A Stakeholder Approach. Pitman, 1984.
-Friede, Gunnar, Timo Busch, and Alexander Bassen. "ESG and financial performance: Aggregated evidence from more than 2000 empirical studies." Journal of Sustainable Finance & Investment, vol. 5, no. 4, 2015, pp. 210-233.
-Friedman, Milton. "The Social Responsibility of Business Is to Increase Its Profits." The New York Times Magazine, 13 Sept. 1970.
-Giese, Guido, et al. "Foundations of ESG Investing: How ESG Affects Equity Valuation, Risk, and Performance." Journal of Portfolio Management, vol. 45, no. 5, 2019, pp. 69-83.
-Johannesburg Stock Exchange. JSE Sustainability and Climate Disclosure Guidance. JSE, June 2022.
-Johnson, R., et al. "The Impact of King IV on Integrated Reporting in South Africa." South African Journal of Accounting Research, 2020.
-Khan, Mozaffar, et al. "Corporate Sustainability: First Evidence on Materiality." The Accounting Review, vol. 91, no. 6, 2016, pp. 1697-1724.
-Kräussl, Roman, et al. "ESG Investing in Emerging Markets." Journal of Asset Management, 2023.
+
+Berg, Florian, et al. "Aggregate Confusion: The Divergence of ESG Ratings." *Review of Finance*, vol. 26, no. 6, 2022, pp. 1315-1344.
+
+Biltson, Kristian. "ESG Rating Disagreement and the Effects on Stock Returns." 2025.
+
+Bollerslev, Tim. "Generalized Autoregressive Conditional Heteroskedasticity." *Journal of Econometrics*, vol. 31, 1986, pp. 307-327.
+
+Bolton, Patrick, and Marcin Kacperczyk. "Do Investors Care about Carbon Risk?" *Journal of Financial Economics*, vol. 142, no. 2, 2021, pp. 517-549.
+
+De Klerk, M., and C. De Villiers. "The Value Relevance of Corporate Responsibility Reporting." *Meditari Accountancy Research*, vol. 20, no. 2, 2012, pp. 95-115.
+
+Dimson, Elroy, et al. "Active Ownership." *Review of Financial Studies*, vol. 28, no. 12, 2015, pp. 3225-3268.
+
+Edmans, Alex. "Does the Stock Market Fully Value Intangibles? Employee Satisfaction and Equity Prices." *Journal of Financial Economics*, vol. 101, no. 3, 2011, pp. 621-640.
+
+Freeman, R. Edward. *Strategic Management: A Stakeholder Approach*. Pitman, 1984.
+
+Friede, Gunnar, Timo Busch, and Alexander Bassen. "ESG and financial performance: Aggregated evidence from more than 2000 empirical studies." *Journal of Sustainable Finance & Investment*, vol. 5, no. 4, 2015, pp. 210-233.
+
+Friedman, Milton. "The Social Responsibility of Business Is to Increase Its Profits." *The New York Times Magazine*, 13 Sept. 1970.
+
+Giese, Guido, et al. "Foundations of ESG Investing: How ESG Affects Equity Valuation, Risk, and Performance." *Journal of Portfolio Management*, vol. 45, no. 5, 2019, pp. 69-83.
+
+Johannesburg Stock Exchange. *JSE Sustainability and Climate Disclosure Guidance*. JSE, June 2022.
+
+Johnson, R., et al. "The Impact of King IV on Integrated Reporting in South Africa." *South African Journal of Accounting Research*, 2020.
+
+Khan, Mozaffar, et al. "Corporate Sustainability: First Evidence on Materiality." *The Accounting Review*, vol. 91, no. 6, 2016, pp. 1697-1724.
+
+Kräussl, Roman, et al. "ESG Investing in Emerging Markets." *Journal of Asset Management*, 2023.
+
 Matos, Pedro. "ESG and Responsible Institutional Investing Around the World." CFA Institute Research Foundation, 2020.
-Pedersen, Lasse Heje, et al. "Responsible Investing: The ESG-Efficient Frontier." Journal of Financial Economics, vol. 142, no. 2, 2021, pp. 572-597.
-Rockafellar, R. Tyrrell, and Stanislav Uryasev. "Conditional Value-at-Risk for General Loss Distributions." Journal of Banking & Finance, vol. 26, 2002, pp. 1443-1471.
-Wintoki, M. Babajide, et al. "Endogeneity and the dynamics of internal corporate governance." Journal of Financial Economics, vol. 105, no. 3, 2012, pp. 581-606.
+
+Pedersen, Lasse Heje, et al. "Responsible Investing: The ESG-Efficient Frontier." *Journal of Financial Economics*, vol. 142, no. 2, 2021, pp. 572-597.
+
+Rockafellar, R. Tyrrell, and Stanislav Uryasev. "Conditional Value-at-Risk for General Loss Distributions." *Journal of Banking & Finance*, vol. 26, 2002, pp. 1443-1471.
+
+Wintoki, M. Babajide, et al. "Endogeneity and the dynamics of internal corporate governance." *Journal of Financial Economics*, vol. 105, no. 3, 2012, pp. 581-606.
