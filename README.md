@@ -1,7 +1,10 @@
 # WQU MSFE 690 CAPSTONE PROJECT – MODULE 4 DESIGN
 **Project Proposal – Student Group 17830**
 **Members:** Ting Ting Han, Henry Mayambu, Jonathan Matura
-**Title:** Quantitative Assessment of ESG Materiality and Risk-Adjusted Performance of JSE-Listed Mining Equities (2014-2025)
+**Title:** # ESG Investing and Stock Market Returns: Evidence from South African Mining Equities
+
+**WQU MSFE 690 Capstone Project - Module 4 Design**
+Student Group 178J0: Ting Ting Han, Henry Mayambu, Jonathan Matura
 **Repo:** esg-jse-mining-capstone | **Main:** `esg_jse_mining_analysis.ipynb`
 
 ### 1. Research Question
